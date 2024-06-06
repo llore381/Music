@@ -34,6 +34,7 @@ const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const prog = document.querySelector('.progress-bar');
+const songSelect = document.getElementById('songSelect');
 
 let song = new Audio();
 let currentSong = 0;
@@ -47,19 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.addEventListener('click', nextSong);
     playBtn.addEventListener('click', togglePlayPause);
     prog.addEventListener('click', seek);
-
-const songSelect = document.getElementById('songSelect');
-
-    songsList.forEach((song, index) => {
-        const option = document.createElement('option');
-        option.value = index;
-        option.text = `${song.name} - ${song.artist}`;
-        songSelect.appendChild(option);
-    });
-
-    songSelect.addEventListener('change', (event) => {
-        currentSong = event.target.value;
-        playMusic();
     });
 
 function loadSong(index) {
@@ -123,4 +111,15 @@ function seek(e) {
     const pos = (e.offsetX / prog.clientWidth) * song.duration;
     song.currentTime = pos;
 }
+    songsList.forEach((song, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.text = `${song.name} - ${song.artist}`;
+        songSelect.appendChild(option);
+    });
+
+    songSelect.addEventListener('change', (event) => {
+        currentSong = event.target.value;
+        playMusic();
+});
 
