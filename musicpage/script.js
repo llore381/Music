@@ -3,7 +3,7 @@ const songsList = [
         name: "Jazz In Paris",
         artist: "Media Right Productions",
         src: "1.mp3",
-        cover: "assets/1.jpg"
+        cover: "1.jpg"
     },
     {
         name: "Blue Skies",
