@@ -137,7 +137,7 @@ body{
     margin: 20px 0;
 }
 
-#songSelect {
+.songSelect {
     padding: 10px;
     font-size: 16px;
     border: none;
