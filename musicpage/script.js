@@ -8,26 +8,26 @@ const songsList = [
     {
         name: "Blue Skies",
         artist: "Silent Partner",
-        src: "assets/2.mp3",
-        cover: "assets/2.jpg"
+        src: "2.mp3",
+        cover: "2.jpg"
     },
     {
         name: "Crimson Fly",
         artist: "Huma-Huma",
-        src: "assets/3.mp3",
-        cover: "assets/3.jpg"
+        src: "3.mp3",
+        cover: "3.jpg"
     },
     {
         name: "A Sky full of stars",
         artist: "Coldplay",
-        src: "assets/5.mp3",
-        cover: "assets/3.jpg"
+        src: "5.mp3",
+        cover: "3.jpg"
     },
     {
         name: "Texas",
         artist: "Beyonce",
-        src: "assets/4.mp3",
-        cover: "assets/3.jpg"
+        src: "4.mp3",
+        cover: "3.jpg"
     },
 ];
 
