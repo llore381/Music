@@ -117,3 +117,13 @@ function seek(e) {
     const pos = (e.offsetX / prog.clientWidth) * song.duration;
     song.currentTime = pos;
 }
+// Supponiamo che questa sia la canzone che vuoi riprodurre
+const song = songsList[4];
+
+// Imposta il sorgente della canzone e del video
+document.getElementById('song-player').src = song.src;
+document.getElementById('background-video').src = song.backgroundVideo;
+
+// Riproduci la canzone e il video
+document.getElementById('song-player').play();
+document.getElementById('background-video').play();
