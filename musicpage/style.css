@@ -134,22 +134,4 @@ body{
     100% {
         transform: rotateZ(360deg);
     }
-.song-selector {
-    margin: 120px 0 90px;  /* Aggiungi spazio sopra e sotto il selettore */
-    font-size: 34px;
-}
-
-}
-
-#songSelect {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    outline: none;
-    width: 100%;
-    max-width: 300px;
-}
-
 }
