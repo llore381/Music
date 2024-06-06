@@ -28,7 +28,7 @@ const songsList = [
         artist: "Beyonce",
         src: "4.mp3",
         cover: "3.jpg"
-    },
+    }
 ];
 
 const artistName = document.querySelector('.artist-name');
