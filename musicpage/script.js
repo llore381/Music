@@ -47,7 +47,20 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.addEventListener('click', nextSong);
     playBtn.addEventListener('click', togglePlayPause);
     prog.addEventListener('click', seek);
-});
+
+const songSelect = document.getElementById('songSelect');
+
+    songsList.forEach((song, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.text = `${song.name} - ${song.artist}`;
+        songSelect.appendChild(option);
+    });
+
+    songSelect.addEventListener('change', (event) => {
+        currentSong = event.target.value;
+        playMusic();
+    });
 
 function loadSong(index) {
     const { name, artist, src, cover: thumb } = songsList[index];
