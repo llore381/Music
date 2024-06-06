@@ -45,6 +45,8 @@ const prog = document.querySelector('.progress-bar');
 let song = new Audio();
 let currentSong = 0;
 let playing = false;
+let backgroundVideo = document.getElementById('background-video');
+
 
 document.addEventListener('DOMContentLoaded', () => {
     loadSong(currentSong);
