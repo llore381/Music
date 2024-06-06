@@ -28,7 +28,6 @@ const songsList = [
         artist: "Beyonce",
         src: "4.m4a",
         cover: "3.jpg",
-        backgroundVideo: "4.mp4"
     }
 ];
 
