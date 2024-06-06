@@ -41,7 +41,6 @@ const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const prog = document.querySelector('.progress-bar');
-const song = songsList[4];
 
 let song = new Audio();
 let currentSong = 0;
@@ -119,10 +118,3 @@ function seek(e) {
     song.currentTime = pos;
 }
 
-// Imposta il sorgente della canzone e del video
-document.getElementById('song-player').src = song.src;
-document.getElementById('background-video').src = song.backgroundVideo;
-
-// Riproduci la canzone e il video
-document.getElementById('song-player').play();
-document.getElementById('background-video').play();
