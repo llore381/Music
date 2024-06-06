@@ -81,6 +81,7 @@ body{
     width: 100%;  /* Imposta la larghezza al 100% del contenitore */
     height: 100%; /* Imposta l'altezza al 100% del contenitore */
     object-fit: cover; /* Mantiene le proporzioni del video mentre lo ridimensiona per adattarlo al contenitore */
+    position: absolute;
 }
 
 .container .disk .circle{
