@@ -134,7 +134,7 @@ body{
         transform: rotateZ(360deg);
     }
 .song-selector {
-    margin: 20px 0 90px;  /* Aggiungi spazio sopra e sotto il selettore */
+    margin: 120px 0 90px;  /* Aggiungi spazio sopra e sotto il selettore */
     font-size: 34px;
 }
 
