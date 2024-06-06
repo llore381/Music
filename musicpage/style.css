@@ -34,26 +34,26 @@ body{
     font-size: 18px;
 }
 
-.container .song-info .progress-bar{
+.song-info .progress-bar{
     background-color: #505050;
     border-radius: 20px;
     cursor: pointer;
 }
 
-.container .song-info .progress-bar .fill-bar{
+.song-info .progress-bar .fill-bar{
     width: 0;
     height: 6px;
     border-radius: 20px;
     background: #1db954;
 }
 
-.container .song-info .time{
+.song-info .time{
     font-size: 15px;
     color: #b9b9b9;
     margin: 10px 0;
 }
 
-.container .disk{
+.disk{
     max-width: 120px;
 }
 
