@@ -22,12 +22,6 @@ const songsList = [
         artist: "Coldplay",
         src: "5.mp3",
         cover: "3.jpg"
-    },
-    {
-        name: "Texas",
-        artist: "Beyonce",
-        src: "4.m4a",
-        cover: "3.jpg"
     }
 ];
 
