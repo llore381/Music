@@ -41,6 +41,7 @@ const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const prog = document.querySelector('.progress-bar');
+const song = songsList[4];
 
 let song = new Audio();
 let currentSong = 0;
@@ -117,8 +118,6 @@ function seek(e) {
     const pos = (e.offsetX / prog.clientWidth) * song.duration;
     song.currentTime = pos;
 }
-// Supponiamo che questa sia la canzone che vuoi riprodurre
-const song = songsList[4];
 
 // Imposta il sorgente della canzone e del video
 document.getElementById('song-player').src = song.src;
