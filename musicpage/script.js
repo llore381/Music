@@ -44,8 +44,6 @@ const prog = document.querySelector('.progress-bar');
 let song = new Audio();
 let currentSong = 0;
 let playing = false;
-let backgroundVideo = document.getElementById('background-video');
-
 
 document.addEventListener('DOMContentLoaded', () => {
     loadSong(currentSong);
@@ -117,26 +115,5 @@ function playMusic() {
 function seek(e) {
     const pos = (e.offsetX / prog.clientWidth) * song.duration;
     song.currentTime = pos;
-}
-function loadSong(index) {
-    const { name, artist, src, cover: thumb, backgroundVideo: bgVideo } = songsList[index];
-    artistName.innerText = artist;
-    musicName.innerText = name;
-    song.src = src;
-    cover.style.backgroundImage = `url(${thumb})`;
-    backgroundVideo.src = bgVideo; // Aggiungi questa linea
-}
-function togglePlayPause() {
-    if (playing) {
-        song.pause();
-        backgroundVideo.pause(); // Aggiungi questa linea
-    } else {
-        song.play();
-        backgroundVideo.play(); // Aggiungi questa linea
-    }
-    playing = !playing;
-    playBtn.classList.toggle('fa-pause', playing);
-    playBtn.classList.toggle('fa-play', !playing);
-    cover.classList.toggle('active', playing);
 }
 
