@@ -133,14 +133,4 @@ body{
     100% {
         transform: rotateZ(360deg);
     }
-.container {
-    position: relative; /* Imposta un contesto di posizionamento per gli elementi figli */
-}
-
-#background-video, .disk {
-    position: absolute; /* Posiziona assolutamente rispetto al contenitore */
-    top: 0;
-    left: 0;
-}
-
 }
