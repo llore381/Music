@@ -22,6 +22,12 @@ const songsList = [
         artist: "Coldplay",
         src: "5.mp3",
         cover: "3.jpg"
+    }.
+{
+        name: "Texas",
+        artist: "Beyonce",
+        src: "assets/4.mp3",
+        cover: "assets/3.jpg"
     }
 ];
 
